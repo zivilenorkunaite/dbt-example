@@ -7,6 +7,10 @@
     Try changing "table" to "view" below
 */
 
+{{ config(
+    tags=["hourly"]
+) }}
+    
 {{ config(materialized='table') }}
 
 with source_data as (
